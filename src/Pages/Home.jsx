@@ -1,8 +1,10 @@
+import Nav from "../Components/Nav";
 
 const Home = () => {
     return (
         <div>
-            adfa
+            <Nav></Nav>
+
         </div>
     );
 };
