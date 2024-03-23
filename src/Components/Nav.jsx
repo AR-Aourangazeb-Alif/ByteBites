@@ -1,4 +1,8 @@
+import { NavLink } from "react-router-dom";
+
 const Nav = () => {
+
+
     return (
 
         <div className="flex justify-between px-4 md:px-8 lg:px-14 py-5 shadow-lg w-full z-50 sticky top-0">
@@ -6,9 +10,21 @@ const Nav = () => {
 
             <div className="flex items-center gap-10">
                 <ul className="flex gap-6 font-bold">
-                    <li>Home</li>
-                    <li className="text-primary">Blogs</li>
-                    <li>Bookmarks</li>
+                    <li>
+                        <NavLink to={'/'}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li className="text-primary">
+                        <NavLink to={'/blogs'}>
+                            Blogs
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/bookmarks'}>
+                            Bookmarks
+                        </NavLink>
+                    </li>
                 </ul>
 
                 <label className="cursor-pointer grid place-items-center">
