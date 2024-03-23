@@ -1,3 +1,5 @@
+import Home from "./Pages/Home"
+
 function App() {
 
   return (
@@ -6,6 +8,8 @@ function App() {
         Hello world!
       </h1>
       <button className="btn btn-primary">Primary</button>
+
+      <Home></Home>
 
     </>
   )
