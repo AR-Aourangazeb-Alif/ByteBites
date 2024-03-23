@@ -1,7 +1,7 @@
 const Nav = () => {
     return (
-        <div className="h-[64px]">
-            <div className="flex justify-between px-4 md:px-8 lg:px-14 py-5 shadow-lg fixed w-full z-50">
+
+        <div className="flex justify-between px-4 md:px-8 lg:px-14 py-5 shadow-lg w-full z-50 sticky top-0">
             <h1 className="text-secondary text-2xl font-bold cursor-pointer">Byte<span className="text-primary">Bites</span></h1>
 
             <div className="flex items-center gap-10">
@@ -18,7 +18,7 @@ const Nav = () => {
                 </label>
             </div>
         </div>
-        </div>
+
     );
 };
 
