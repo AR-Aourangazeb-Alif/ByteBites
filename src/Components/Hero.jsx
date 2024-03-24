@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
-        <div className="hero -mt-36">
+        <div className="hero -mt-20">
             <div className="hero-content text-center">
-                <div className="max-w-md">
-                    <h1 className="text-5xl font-bold">Hello there</h1>
-                    <p className="py-6">Welcome to ByteBites, the digital oasis for coders, developers, and tech enthusiasts worldwide.</p>
+                <div className="max-w-lg">
+                    <h1 className="text-5xl font-bold">
+                        Welcome To <span className="font-bold bg-gradient-to-r from-primary via-blue-500 to-secondary text-transparent bg-clip-text bg-300% animate-gradient">ByteBites</span>
+                        </h1>
+                    <p className="py-6">ByteBites is the bridge between the complex world of technology and the curious minds eager to understand it</p>
 
-                    <div className="space-x-4">
+                    <div className="space-x-3">
                         <Link
                         to={'/blogs'}
                         className="relative inline-block px-4 py-2 font-medium group">

@@ -9,7 +9,7 @@ const Home = () => {
 
 
     return (
-        <div className="h-[calc(100svh-72px)] flex flex-col justify-center relative">
+        <div className="h-[calc(100svh-64px)] flex flex-col justify-center relative">
 
             <Hero></Hero>
 

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = ({themeButton, theme}) => {
 
@@ -6,8 +6,8 @@ const Nav = ({themeButton, theme}) => {
 
     return (
 
-        <div className="flex justify-between px-4 md:px-8 lg:px-14 py-5 shadow-lg w-full z-50 sticky top-0">
-            <h1 className="text-secondary text-2xl font-bold cursor-pointer">Byte<span className="text-primary">Bites</span></h1>
+        <div className="flex justify-between px-4 md:px-8 py-4 shadow-lg w-full z-50 sticky top-0">
+            <Link to={'/'} className="text-secondary text-2xl font-bold">Byte<span className="text-primary">Bites</span></Link>
 
             <div className="flex items-center gap-10">
                 <ul className="flex gap-6 font-bold">
