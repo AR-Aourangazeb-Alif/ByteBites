@@ -6,7 +6,7 @@ const Nav = ({themeButton, theme}) => {
 
     return (
 
-        <div className="flex justify-between px-4 md:px-8 py-4 shadow-lg w-full z-50 sticky top-0 mb-8 bg-base-100">
+        <div className="flex justify-between px-4 md:px-8 py-4 shadow-lg w-full z-50 sticky top-0 bg-base-100">
             <Link to={'/'} className="text-secondary text-2xl font-bold">Byte<span className="text-primary">Bites</span></Link>
 
             <div className="flex items-center gap-10">
