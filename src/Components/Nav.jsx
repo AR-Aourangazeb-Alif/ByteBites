@@ -1,30 +1,8 @@
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({themeButton, theme}) => {
 
-    const [theme, setTheme] = useState(
-        () => {
-        if(localStorage.getItem('theme')){
-            return localStorage.getItem('theme');
-        }else{
-            return 'light';
-        }}
-    );
-
-    useEffect(() => {
-        localStorage.setItem('theme', theme);
-
-    }, [theme])
-
-    const themeButton = e =>{
-        if(e.target.checked){
-            setTheme('night');
-        }else{
-            setTheme('light');
-        }
-        
-    }
+    
 
     return (
 
