@@ -18,7 +18,7 @@ const Blogs = () => {
                     <img src={blogs[0].cover_image} className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 bg-gray-500" />
                     <div className="p-6 space-y-2 lg:col-span-5">
                         <h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">{blogs[0].title}</h3>
-                        <span className="text-xs text-gray-400">{new Date(blogs[0].published_at).toLocaleString()}</span>
+                        <span className="text-xs text-gray-400">{blogs[0].readable_publish_date}, {new Date(blogs[0].published_at).getFullYear()}</span>
                         <p>{blogs[0].description}</p>
                     </div>
                 </Link>
